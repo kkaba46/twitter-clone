@@ -7,6 +7,9 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'twitterClone.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-    url(r'^twitter/static_file$','twitter.views.static_file'),
+    url(r'^twitter/index$','twitter.views.index'),
+    url(r'^twitter/login$','twitter.views.login'),
+    url(r'^twitter/logout$','twitter.views.logout'),
+    url(r'^twitter/signup$','twitter.views.signup'),
     url(r'^admin/', include(admin.site.urls)),
 )
